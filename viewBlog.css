@@ -1,0 +1,37 @@
+.navbar, .footer {
+    background-color: #000;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.blog-title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #ff6347; /* Optional accent color */
+}
+.content img {
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.author-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.footer {
+    color: #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+.comment-section {
+    background-color: ghostwhite !important;
+    padding: 1rem;
+    border-radius: 5px;
+}

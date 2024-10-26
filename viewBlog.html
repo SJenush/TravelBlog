@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Blog</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="viewBlog.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">BlogSite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Create Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Heading -->
+    <div class="container text-center mt-4">
+        <h1 class="blog-title">Blog Title Goes Here</h1>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="container content my-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor. Duis eu convallis lacus, in feugiat magna. Maecenas fringilla dapibus diam, ac malesuada turpis vehicula ut. Phasellus id metus vitae erat ornare sagittis.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Blog image 1">
+        <img src="https://via.placeholder.com/800x400" alt="Blog image 2">
+        <p>Vivamus nec dui et arcu ultricies aliquet. Integer porta, arcu eget convallis vehicula, metus lacus venenatis justo, vitae facilisis magna sapien ac lorem. Aenean sit amet nisl lorem. In hac habitasse platea dictumst.</p>
+    </div>
+
+    <!-- Author Info -->
+    <div class="container author-info">
+        <img src="https://via.placeholder.com/60" alt="Author photo">
+        <div>
+            <h5>Author Name</h5>
+            <p>Short bio of the author, detailing their expertise and other notable works.</p>
+        </div>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="container my-4 comment-section">
+        <h4>Comments</h4>
+        
+        <!-- Dummy Comments -->
+        <div class="comment mt-3">
+            <strong>User1</strong>
+            <p>This is a very insightful blog! I enjoyed reading it.</p>
+            <button class="btn btn-outline-light btn-sm">Like</button>
+        </div>
+        <div class="comment mt-3">
+            <strong>User2</strong>
+            <p>Thanks for sharing this information. It was helpful!</p>
+            <button class="btn btn-outline-light btn-sm">Like</button>
+        </div>
+
+        <!-- Add Comment -->
+        <div class="form-group mt-4">
+            <label for="addComment">Add a comment:</label>
+            <textarea class="form-control" id="addComment" rows="2"></textarea>
+            <button class="btn btn-primary btn-sm mt-2">Post Comment</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Follow us on:
+                <a href="#" class="text-light">Facebook</a> |
+                <a href="#" class="text-light">Twitter</a> |
+                <a href="#" class="text-light">Instagram</a>
+            </p>
+            <p>&copy; 2024 BlogSite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
