@@ -1,6 +1,11 @@
 .navbar, .footer {
     background-color: #000;
 }
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
 .navbar-brand, .nav-link {
     color: #fff !important;
 }
