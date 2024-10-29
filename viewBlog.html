@@ -6,6 +6,7 @@
     <title>View Blog</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="viewBlog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
@@ -58,24 +59,24 @@
     <!-- Comment Section -->
     <div class="container my-4 comment-section">
         <h4>Comments</h4>
-        
+        <div id="div_cmt">
         <!-- Dummy Comments -->
         <div class="comment mt-3">
             <strong>User1</strong>
             <p>This is a very insightful blog! I enjoyed reading it.</p>
-            <button class="btn btn-outline-light btn-sm">Like</button>
+            <button class="btn btn-outline-light btn-sm"><i class="fas fa-thumbs-up like"></i></button>
         </div>
         <div class="comment mt-3">
             <strong>User2</strong>
             <p>Thanks for sharing this information. It was helpful!</p>
-            <button class="btn btn-outline-light btn-sm">Like</button>
+            <button class="btn btn-outline-light btn-sm"><i class="fas fa-thumbs-up like"></i></button>
         </div>
-
+    </div>
         <!-- Add Comment -->
         <div class="form-group mt-4">
             <label for="addComment">Add a comment:</label>
             <textarea class="form-control" id="addComment" rows="2"></textarea>
-            <button class="btn btn-primary btn-sm mt-2">Post Comment</button>
+            <button class="btn btn-primary btn-sm mt-2" id="btn_cmt" >Post Comment</button>
         </div>
     </div>
 
@@ -87,11 +88,11 @@
                 <a href="#" class="text-light">Twitter</a> |
                 <a href="#" class="text-light">Instagram</a>
             </p>
-            <p>&copy; 2024 BlogSite. All rights reserved.</p>
+            <p>&copy; 2024 TravelBlog. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="viewBlog.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
