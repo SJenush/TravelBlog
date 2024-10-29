@@ -57,7 +57,7 @@ button {
     width: 100%;
     padding: 12px;
     margin-top: 10px;
-    background-color: #4CAF50;
+    background-color:  black;
     border: none;
     color: white;
     font-size: 16px;
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: black;
 }
 
 .toggle-btn {
@@ -78,4 +78,7 @@ button:hover {
 
 .toggle-btn:hover {
     text-decoration: underline;
+}
+.navbar-dark{
+    background-color: black;
 }
