@@ -3,95 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Signup Page</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f2f5;
-        }
-
-        .container {
-            width: 400px;
-            height: 500px;
-            position: relative;
-            overflow: hidden;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-container {
-            width: 200%;
-            height: 100%;
-            display: flex;
-            transition: transform 0.6s ease-in-out;
-        }
-
-        .form {
-            width: 50%;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        input {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            margin-top: 10px;
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .toggle-btn {
-            margin-top: 10px;
-            color: #007BFF;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .toggle-btn:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Travel Blog - Login & Signup</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+    <a class="navbar-brand" href="#">TravelBlog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="viewBlog.html">View Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Create Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="signup.html">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Login and Signup Container -->
 <div class="container">
     <div class="form-container" id="form-container">
-        
+        <!-- Login Form -->
         <div class="form login-form">
             <h2>Login</h2>
             <input type="email" placeholder="Email" required>
@@ -100,7 +38,7 @@
             <p class="toggle-btn" onclick="toggleForm()">Don't have an account? Sign Up</p>
         </div>
 
-       
+        <!-- Signup Form -->
         <div class="form signup-form">
             <h2>Sign Up</h2>
             <input type="text" placeholder="Username" required>
@@ -111,6 +49,11 @@
         </div>
     </div>
 </div>
+
+<!-- Bootstrap and JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
     function toggleForm() {
