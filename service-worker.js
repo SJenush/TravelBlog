@@ -1,16 +1,15 @@
 const CACHE_NAME = 'travelblog-cache-v1';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/viewBlog.html',
-    '/createBlog.html',
-    '/manifest.json',
-    '/index.css',
-    '/viewBlog.css',
-    '/createBlog.css',
-    '/signup.html',
-    'img/index.jpg',
-    '/postBlog.js'
+    './',
+    './index.html',
+    './viewBlog.html',
+    './createBlog.html',
+    './manifest.json',
+    './index.css',
+    './viewBlog.css',
+    './createBlog.css',
+    './signup.html',
+    './postBlog.js'
 ];
 self.addEventListener('install', function(event) {
     event.waitUntil(
@@ -22,7 +21,7 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-    if (event.request.url.includes('/img/')) {
+    if (event.request.url.includes('./img/')) {
         // Caches image requests dynamically
         event.respondWith(
             caches.match(event.request).then(function(response) {
